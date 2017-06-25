@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒模型与布局</title>
+    <style>
+        /*numbered paragraphs*/
+        h3.numbered{counter-reset:mynum;}
+        p.numbered::before{
+            content: counter(mynum) ": ";
+            counter-increment: mynum;
+            font-weight: bold;
+        }
+        body{counter-reset: headnum;}
+        h3::before{
+            content: "(" counter(headnum,upper-latin) ")";
+            counter-increment: headnum;
+        }
+        
+        li{
+            list-style: lower-roman;
+            margin-bottom: 8px;
+        }
+        ul{
+            border: 10px solid lightblue;
+        }
+    </style>
+</head>
+<body>
+  <h3 id="oceans">The oceans</h3>
+  <ul>
+      <li>Arctic</li>
+      <li>Atlantic</li>
+      <li>Pacific</li>
+      <li>Indian</li>
+      <li>Southern</li>
+  </ul>
+  <h3 class="numbered">numbered paragraphs</h3>
+  <p class="numbered">Lorem ipsum</p>
+  <p class="numbered">Dolor sit</p>
+  <p class="numbered">Amet consectetuer</p>
+  <p class="numbered">Magna aliquam</p>
+  <p class="numbered">Autem veleum</p>
+</body>
+</html>

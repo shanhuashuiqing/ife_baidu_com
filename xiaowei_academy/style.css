@@ -1,0 +1,39 @@
+
+body{
+    font: 16px "Comic Sans MS",cursive;
+    background: url("src/img/Blue-rule.png")
+}
+strong {
+    color: red;
+    text-decoration: none;font: 200% serif;
+    background-color: #ddf;
+    }
+p{color: blue}
+a.homepage:link,a.homepage:visited{
+    padding: 1px 10px 1px 10px;
+    color: #fff;
+    background: #555;
+    border-radius: 1px outset rbga(50,50,50,.5);
+    font-family: georgia,serif;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: none;
+}
+a.homepage:hover,a.homepage:focus,a.homepage:active{
+    background-color: #666;
+}
+div.menu-bar ul ul {
+  display: none;
+}
+
+div.menu-bar li:hover > ul {
+  display: block;
+}
+.ref::before{
+    font-weight: bold;
+    color: navy;
+    content: "Reference:";
+}
+p::before{
+    content: url("src/img/Yellow-pin.png");
+}
