@@ -95,5 +95,7 @@ CSS可以在元素的前后插入文本：在选择器的后面加上：：befor
   #one{position:sticky;top:10px;}
   ```
   在viewport视口滚动到元素top距离小于10px之前，元素为相对定位。之后，元素将固定在与顶部距离10px的位置，直到viewport视口回滚到阈值以下。
-
+  # Position居中的方式详解
+  [完整讨论了不同情况下的居中方案](https://css-tricks.com/centering-css-complete-guide/)
+  
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+       
+        function onclick1(){
+            var mymessage=confirm("你喜欢Javascript吗？");
+            if(mymessage==true){
+                document.write("很好，加油！");
+            }
+            else{
+                document.write("JS功能很强大，要学习哦！");
+            }
+        };
+       function promptClick(){
+            var myname=prompt("请输入你的名字");
+            if(myname!=null){
+                alert("你好"+myname);
+            }
+            else{
+                alert("你好 myfriend!");
+            }
+       };
+       /*function openwindow(){
+            window.open("http://www.baidu.com","_blank","width=300,height=300");
+       };*/
+       function openWindow(){
+        var confirmd=confirm("是否打开新窗口");
+        if(confirmd){
+            var prompw=prompt("请输入需要打开的网址");
+            if(prompw!=null){
+                window.open(prompw,"_blank","width=300,height=300");
+            }
+        };
+    };
+
+    </script>
+</head>
+<body>
+    <p id="p1">第一个动作</p>
+    <p id="p2">第二个动作</p>
+    <form>
+        <input type="button" value="点我，快点点我" onclick="onclick1()" />
+        <input type="button" value="prompt" onclick="promptClick()">
+        <input type="button" value="弹窗按钮" onclick="openWindow()">
+    </form>
+    
+    
+    
+</body>
+</html>

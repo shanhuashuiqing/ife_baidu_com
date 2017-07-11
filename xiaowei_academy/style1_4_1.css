@@ -1,0 +1,34 @@
+/*
+* @Author: Sophie
+* @Date:   2017-04-23 17:25:23
+ * @Last Modified by: SHSQ
+ * @Last Modified time: 2017-06-25 20:07:15
+*/
+.content {
+    width: 400px;
+    height: 200px;
+    background-color: #CCC;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.quarter-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #FC0;
+    position: absolute;
+}
+
+.tl {
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 100%;
+}
+
+.br {
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 50%;
+}
